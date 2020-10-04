@@ -21,6 +21,10 @@ import torch
 from torch.optim.optimizer import Optimizer, required
 import itertools as it
 
+from copy import deepcopy
+from itertools import chain
+from collections import defaultdict
+from torch._six import container_abcs
 
 
 class Ranger(Optimizer):
